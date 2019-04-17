@@ -1,0 +1,42 @@
+<div id="Register"> //define equal styles for "Register" <div> elements
+<h1 class="style1">Register</h1>
+<form method= "POST" action= "<?php $_PHP_SELF ?>"> //to submit a form to a server
+<h3 class="style1"> First Name:
+  <input type="text" name="Name" pattern="[A-Za-z]{1,20}" title="No less than 2 and no more than 20 letters" value="<?php if (isset($_POST[ 'Name' ])) echo $_POST[ 'Name' ]; ?>"> // create text field, where users write their names using latin alphabet and no less than 1 and no more than 20 
+</h3>
+<h3 class="style1"> Last Name:
+  <input type="text" name= "Surname" pattern="[A-Za-z]{1,20}" title="Use only latin alphabet" value="<?php if ( isset( $_POST[ 'Surname' ])) echo $_POST[ 'Surname' ]; ?>"> // create text field, where users write their surnames using latin alphabet and no less than 1 and no more than 20 
+</h3>
+<h3 class="style1"> Email Address:
+  <input type="text" name= "Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="The right format of the Email: characters@characters.domain" value="<?php if ( isset( $_POST[ 'Email' ]))
+	echo $_POST[ 'Email' ]; ?>"> // create text field, where users write their emails as “characters@characters.domain”
+</h3>
+<h3 class="style1"> Login
+  <input type="email" name= "Login"  value="<?php if ( isset( $_POST[ 'Login' ])) echo $_POST[ 'Login' ]; ?>"> // create email field, where users creates their user names
+	</h3>
+<h3 class="style1"> Password:
+<input type="password" name= "Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Please, read the note and try again"  value= "<?php if ( isset( $_POST[ 'Password' ])) echo $_POST[ 'Password' ]; ?>">//create password field, where users write their passwords which length must be more than 6 characters and they are at least one  number, one upper case letter and one lower case letter
+              (Note: The  length of the Password must be more than 6 characters and they are at least one  number, one upper case letter and one lower case letter)</h3>
+<h3 class="style1"> Status:
+<select name="Status" size="1"  value= "<?php if ( isset( $_POST[ 'Status' ]))v echo $_POST[ 'Status' ]; ?>"> // create dropdown list where users choose their status
+<option value="">Choose</option> // define the available options in the list
+<option value="1">Teacher</option> // define the available options in the list
+<option value="2">Student</option> // define the available options in the list
+</select>
+</h3>
+<h3 class="style1"> Subject (for teacher):
+<input type="text" name= "Subject" pattern="[A-Za-z] {1,20}" title="Use only latin alphabet" value="<?php if ( isset( $_POST[ 'Subject' ]))
+	echo $_POST[ 'Subject' ]; ?>"> // create text field, where users(teachers) write their subject using latin alphabet and no less than 1 and no more than 20
+</h3>
+<h3 class="style1"> Grade (for student):
+<input type="text" name= "Grade" pattern="[0-9]+[A-Za-z]" title="The Grade must have number and letter. No more than 3 characters"    value="<?php if ( isset( $_POST[ 'Grade' ]))
+echo $_POST[ 'Grade' ]; ?>"> // create text field, where users(students) write their grade by using a number and latin letter 
+</h3>
+<h3 class="style1"> Telephone number:
+<input type="text" name= "Telephonenum" pattern="[0-9]{5,11}" title="Use only latin numbers (more than 5 and less than 11)" value="<?php if ( isset( $_POST[ 'Telephonenum' ])) echo $_POST[ 'Telephonenum' ]; ?>"> // create text field, where users write their telephone number using only numbers and no less than 5 and no more than 11
+</h3>
+<p class="style1">
+<input name="add" type="submit" class="style1" id="add" value="Add User"> //defines a button for submitting form input to a server page with a script for processing input data
+</form>
+<p></p>
+</div>
