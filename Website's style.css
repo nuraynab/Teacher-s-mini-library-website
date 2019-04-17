@@ -1,7 +1,7 @@
-body {//the style of the body
-padding:0px;// set the size of the white space between the body content and the body border to the 0px
-margin:0px;//set the size of the white space ouside the border to the 0px
-background-image:url(67756419.jpg);// establishes the image “67756419.jpg”  to use as the background of the body
+body { //the style of the body
+padding:0px; // set the size of the white space between the body content and the body border to the 0px
+margin:0px; //set the size of the white space ouside the border to the 0px
+background-image:url(67756419.jpg); // establishes the image “67756419.jpg”  to use as the background of the body
 }
 #body {// the style of the class “body”
 position:relative;// the position is relative to its normal position
