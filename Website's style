@@ -1,0 +1,87 @@
+body {//the style of the body
+padding:0px;// set the size of the white space between the body content and the body border to the 0px
+margin:0px;//set the size of the white space ouside the border to the 0px
+background-image:url(67756419.jpg);// establishes the image “67756419.jpg”  to use as the background of the body
+}
+#body {// the style of the class “body”
+position:relative;// the position is relative to its normal position
+width:1250px;// the width
+background:none;
+padding:0px;
+margin:0px auto 0px auto;
+}
+#Head{// the style of the class “Head”
+position:relative;
+display:block;// set the display,  a block-level element always starts on a new line and takes up the full width available
+background:#008000;
+padding:2px;
+height:120px;// the height
+width:auto;
+}
+#Title {// the style of the class “Head”
+color:#FFFFFF;// set the colour of the text is white
+text-align:center;// set the horizontal alignment of a text is center
+}
+#status {
+color:#FFFFFF;
+text-align:center;
+background-color:#17AA29;
+padding:2px;
+height:120px;
+width:auto;
+}
+#menu {
+	padding: 0px;
+	width: 1200px;
+	margin-top: -1px;//set the size of the top white space ouside the border
+	margin-right:0;//set the size of the right white space ouside the border
+	margin-bottom: 0px;//set the size of the bottom white space ouside the border
+	margin-left: 0;//set the size of the left white space ouside the border
+	color:#FFFFFF
+}
+#menu ul {
+	margin: 0px;
+	padding: 0px;
+	background-color: #0000FF;
+	text-align: center;
+	border-top-color: #FFFF00;//set the color of the top border
+	border-right-color: #FFFF00;// set the color of the right border
+	border-bottom-color: #FFFF00;// set the color of the bottom border
+	border-left-color: #FFFF00;// set the color of the left border
+}
+#menu ul li {
+	background-color:#008000;
+	float: left;//specifies the element should float to the left
+	border: 1px none #000099;
+	position: relative;
+	list-style-type: none;//specifies no list item marker
+	color: #FFFFFF;
+}
+#menu ul li a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;//specifies the font family where fonts do not have the lines at the ends of characters
+	font-size: 16px;
+	line-height: 30px;
+	color:#FFFFFF;
+	text-decoration: blink;//set decorations of text
+	display: block;
+	height: 30px;
+	width: 150px;
+}
+#menu ul ul {
+	position: absolute;
+	visibility: hidden;
+	top: 31px;
+}
+#menu ul li:hover ul {
+	visibility: visible;
+}
+#menu ul li:hover {
+	background-color:#05D500;
+	color:#FFFFFF;
+}
+#menu ul li ul li a:hover {
+	background-color:#05D500;
+}
+#menu ul li a:hover {
+	color: #FFFFFF;
+}
