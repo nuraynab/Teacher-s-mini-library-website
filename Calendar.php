@@ -27,24 +27,25 @@ echo "<tr><td width=46 height=35><font color=#FFFFFF><strong> Mon </strong></fon
 $day_count = 1; // count the days in the week, up to 7
 echo "<tr>"; 
 while ( $blank > 0 ) 
-{ echo "<td></td>"; 
-$blank = $blank-1; 
-$day_count++; }
+{ 	echo "<td></td>"; 
+	$blank = $blank-1; 
+	$day_count++; }
 
 $day_num = 1; // set the first day of the month to 1
 while ( $day_num <= $days_in_month ) // count up the days to the number of days in month 
-{if(date('d') != $day_num)
-{echo "<td height=35><font color=#FFFFFF><strong> $day_num </strong></font></td>";
-	 $day_num++;
-      	 $day_count++;} 
+	{if(date('d') != $day_num)
+		{echo "<td height=35><font color=#FFFFFF><strong> $day_num </strong></font></td>";
+	 	$day_num++;
+      	 	$day_count++;} 
 	else {
-	   echo "<td BGCOLOR=#FFFFFF><font color=#008000><strong>$day_num</strong></font></td>";
-	   $day_num++;
-       $day_count++;
+		echo "<td BGCOLOR=#FFFFFF><font color=#008000><strong>$day_num</strong></font></td>";
+	   	$day_num++;
+       		$day_count++;
    	}
-if ($day_count > 7) // start a new row every week
-{ echo "</tr><tr>"; $day_count = 1; } }
+	if ($day_count > 7) // start a new row every week
+		{ echo "</tr><tr>"; $day_count = 1; } 
+}
 while ( $day_count >1 && $day_count <=7 ) 
-{ echo "<td></td>"; $day_count++; } 
+	{ echo "<td></td>"; $day_count++; } 
 echo "</tr></table>";
 ?>
