@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['UserID']))
-{require ('login_tools.php'); load();}
+  {require ('login_tools.php'); load();}
 $page_title = 'Goodbye';
 $_SESSION = array();
 session_destroy();
